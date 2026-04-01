@@ -1,0 +1,53 @@
+:root {
+  /* Paleta Corporativa del Sistema DAM */
+  --primary-color: #00719E;
+  --primary-color-text: #ffffff;
+  --primary-200: #89CFF0; /* Light blue (tercero) */
+  --primary-300: #46a1cc; 
+  --primary-500: #00719E; /* Primary */
+  --primary-700: #00446A; /* Dark (secundario) */
+  --primary-800: #003350;
+
+  /* Colores para elementos secundarios */
+  --highlight-bg: #89cff040;
+}
+
+/* Custom Menubar overrides */
+.p-menubar {
+  background: var(--primary-color) !important;
+}
+
+.p-menubar .p-menuitem-text, 
+.p-menubar .p-menuitem-icon,
+.p-menubar .p-menubar-button {
+  color: #ffffff !important;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--surface-ground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Forzar la paleta corporativa sobre el Menubar para que sea dark blue (Primario/Secundario) */
+.p-menubar {
+  background-color: var(--primary-700) !important;
+  border: none !important;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-text, 
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content .p-menuitem-link .p-menuitem-icon {
+  color: #e0f2fe !important;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-content {
+  background: transparent !important;
+}
+
+.p-menubar .p-menubar-root-list > .p-menuitem:hover > .p-menuitem-content {
+  background-color: var(--primary-500) !important;
+  border-radius: 6px;
+}
